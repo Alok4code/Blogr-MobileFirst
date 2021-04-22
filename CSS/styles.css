@@ -11,9 +11,9 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 0 0 0 150px;
-  background-image: url(../../img/bg-pattern-intro.svg),
+  background-image: url(../img/bg-pattern-intro.svg),
     linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-origin: border-box;
 }
