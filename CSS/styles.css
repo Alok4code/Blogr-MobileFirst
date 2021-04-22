@@ -322,7 +322,7 @@ body {
 .content-2 {
   margin: 10% 0;
   border-radius: 0 80px 0 80px;
-  background-image: url(../../img/bg-pattern-circles.svg),
+  background-image: url(../img/bg-pattern-circles.svg),
     linear-gradient(to right, rgb(44, 45, 63), rgb(63, 65, 100));
   background-repeat: no-repeat, no-repeat;
   background-position: left top;
