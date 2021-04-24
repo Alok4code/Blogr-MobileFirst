@@ -113,13 +113,17 @@ body {
   display: block;
 }
 
+.dropbtn i {
+  margin: 3px 0 0 5px;
+}
+
 .dropdown-content a:hover {
   font-weight: bolder;
   background-color: rgb(245, 245, 245);
   border-radius: inherit;
 }
 .dropdown:hover i {
-  transition: 1s;
+  transition: 0.9s;
   transform: rotateX(180deg);
 }
 
@@ -211,7 +215,7 @@ body {
 /* ------------Hero Section-------------- */
 .hero-section {
   width: 80%;
-  margin: 20% auto;
+  margin: 150px auto;
   padding: 0 0 150px 0;
   display: flex;
   flex-direction: column;
@@ -220,7 +224,7 @@ body {
 .hero-heading {
   font-family: 'Overpass', sans-serif;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #fff;
 }
 
@@ -416,4 +420,126 @@ body {
   font-size: 16px;
   color: #fff;
   margin: 2% 20%;
+}
+
+/* -------Media Queries------- */
+
+@media only screen and (min-width: 768px) {
+  .main {
+    border-radius: 0 0 0 200px;
+  }
+
+  .nav-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  nav .hamburger {
+    display: none;
+  }
+
+  .right-continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+    padding-right: 0;
+  }
+
+  .left-items {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px 0 10px;
+  }
+
+  .right-items,
+  .nav-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    position: absolute;
+    top: 38px;
+  }
+
+  .dropbtn {
+    font-family: 'Overpass', 'san-sarif';
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    margin: 0 5px 0 0;
+  }
+
+  nav hr {
+    display: none;
+  }
+
+  .nav-btn-white-bg {
+    margin-right: 0;
+    color: rgba(255, 61, 84, 1);
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    background: #fff;
+    width: 140px;
+    height: 50px;
+  }
+
+  .nav-btn-transparent-bg {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 25px;
+    border: 0px solid #fff;
+    background: transparent;
+    width: 140px;
+    height: 50px;
+  }
+
+  .nav-btn-transparent-bg:hover {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .dropbtn {
+    color: rgb(255, 255, 255);
+  }
+
+  .hero-heading {
+    font-size: 4.5rem;
+  }
+
+  .sub-text {
+    font-size: 1.4rem;
+  }
 }
