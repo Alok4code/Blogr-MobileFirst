@@ -215,7 +215,7 @@ body {
 /* ------------Hero Section-------------- */
 .hero-section {
   width: 80%;
-  margin: 150px auto;
+  margin: 150px auto 100px auto;
   padding: 0 0 150px 0;
   display: flex;
   flex-direction: column;
@@ -343,6 +343,7 @@ body {
   margin: 20px 0;
   width: auto;
   font-family: 'Overpass', sans-serif;
+  text-align: center;
   font-size: 40px;
   font-weight: bold;
   letter-spacing: -4%;
@@ -376,6 +377,12 @@ body {
   letter-spacing: 1%;
   color: rgb(255, 255, 255);
   text-align: center;
+}
+
+.body-img1 {
+  margin-top: 100px;
+  width: 70%;
+  height: 70%;
 }
 
 .left-headings,
@@ -425,6 +432,9 @@ body {
 /* -------Media Queries------- */
 
 @media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .main {
     border-radius: 0 0 0 200px;
   }
@@ -541,5 +551,219 @@ body {
 
   .sub-text {
     font-size: 1.4rem;
+  }
+  /* --------------------------------- */
+
+  .content-1 {
+    width: 100%;
+    height: 710px;
+    position: relative;
+  }
+
+  .mid-headings {
+    margin: 0;
+  }
+
+  .body-img {
+    margin: 0;
+  }
+
+  .content-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    top: 100px;
+  }
+  .left-headings {
+    font-family: 'Overpass', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: -2.5%;
+    color: rgb(37, 37, 45);
+    margin-top: 20px;
+    width: 50%;
+  }
+  .normal-text {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 175%;
+    letter-spacing: 2.5%;
+    color: rgb(37, 37, 45);
+    margin-left: 0;
+    width: 50%;
+  }
+  .right-img {
+    float: right;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: -300px;
+    margin: 100px 0 0 0;
+  }
+
+  .right-img > .body-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .full-body {
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+  }
+
+  .content-right {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-right > .normal-text {
+    margin: 0;
+    padding: 20px 0;
+    width: auto;
+    text-align: left;
+  }
+
+  .content-right > .right-headings {
+    text-align: left;
+  }
+
+  .mobile-left {
+    margin: -80px 0;
+  }
+
+  .body-img1 {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-3 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content-3 > .image-left {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: -200px;
+  }
+
+  .content-3 > .content-3-box {
+    width: 50%;
+    text-align: left;
+  }
+
+  .normal-text3 {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  /* ------------------footer----------------------- */
+  .footer-logo {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    margin: 80px 0 80px 100px;
+  }
+  .footer .bold-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .footer ul {
+    margin-top: 80px;
+    margin-left: 10%;
+  }
+  .footer li {
+    list-style: none;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .footer {
+    margin-top: 120px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    height: 360px;
+    border-radius: 0px 100px 0px 0px;
+    background: hsl(240, 10%, 16%);
+  }
+}
+
+@media only screen and (min-width: 1125px) {
+  .right-img {
+    float: right;
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: -350px;
+    top: 0px;
+  }
+
+  .content-left {
+    top: 150px;
+  }
+
+  .full-body {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .content-right {
+    width: 50%;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-right > .normal-text {
+    margin: 0;
+    padding: 40px 20px 40px 0;
+    width: auto;
+  }
+
+  .mobile-left {
+    margin: -80px 0;
+    flex-grow: 1;
+  }
+
+  .body-img1 {
+    margin-top: 0;
+    width: 400px;
+    height: 100%;
+  }
+
+  .content-3 {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content-3 > .image-left {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: -350px;
+    top: -120px;
   }
 }
